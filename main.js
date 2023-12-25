@@ -78,3 +78,10 @@ TweenMax.from(".description p", 1, {
     y: 20,
     ease: Expo.easeInOut
 })
+
+TweenMax.from(".arektaimg", 2, {
+    opacity: 0,
+    delay:3.2,
+    x: 800,
+    ease: Expo.easeInOut
+})
