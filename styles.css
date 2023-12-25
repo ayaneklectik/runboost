@@ -98,6 +98,15 @@ nav ul li a:hover::after {
     left:13%;
     top: 50px;
 }
+
+.arektaimg img{
+    position: relative;
+    width: 450px;
+    left:53%;
+    top: -40px;
+    rotate: 100deg;
+}
+
 #hero{
     background-color:rgb(126, 162, 177);
     height: 100vh;
