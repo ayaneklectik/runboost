@@ -7,11 +7,13 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: poppins;
-    background-color: #ff7d4e;
+    background-color: #b3b3b3;
+    scroll-behavior: smooth;
 }
 
 .line-one {
     position: fixed;
+    top: 87px;
     width: 15px;
     height: 100vh;
     background: #ce0606;
@@ -20,10 +22,29 @@ body {
 
 .line-two {
     position: fixed;
+    top: 87px;
     width: 25px;
     height: 100vh;
     background: #151516;
     left: 25%;
+}
+
+.line-one1 {
+    top: 87px;
+    position: fixed;
+    width: 15px;
+    height: 100vh;
+    background: #603674;
+    left: 72%;
+}
+
+.line-two2 {
+    top: 87px;
+    position: fixed;
+    width: 25px;
+    height: 100vh;
+    background: #c5c5c5;
+    left: 69%;
 }
 
 nav {
@@ -32,6 +53,7 @@ nav {
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 5px 0;
     box-shadow: 0 2px 4px rgba(77, 56, 56, 0.1);
 }
@@ -64,7 +86,7 @@ nav ul li a::after {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: #ffffff;
+    background: #000000;
     transition: width 0.4s;
 }
 
@@ -79,7 +101,7 @@ nav ul li a:hover::after {
     font-weight: bold;
     text-transform: uppercase;
     font-style: italic;
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .search {
@@ -96,20 +118,22 @@ nav ul li a:hover::after {
     position: relative;
     width: 450px;
     left:13%;
-    top: 50px;
+    top: 70px;
+    filter: drop-shadow(10px 10px 10px 10px rgba(0, 0, 0, 0.6)) ;
 }
 
 .arektaimg img{
     position: relative;
-    width: 450px;
-    left:53%;
-    top: -40px;
-    rotate: 100deg;
+    width: 370px;
+    left:63%;
+    top: 30px;
+    
 }
 
 #hero{
-    padding: 10px 20px;
-    background-color:rgb(126, 162, 177);
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
 }
 .title {
@@ -126,7 +150,7 @@ nav ul li a:hover::after {
 .title p {
     font-size: 25px;
     font-weight: 300;
-    color: rgb(92, 92, 92);
+    color: rgb(226, 221, 221);
     text-transform: uppercase;
     left: 150px;
     letter-spacing: 10px;
@@ -136,9 +160,9 @@ nav ul li a:hover::after {
     position: relative;
     text-decoration: none;
     bottom: 260px;
-    right: -57%;
+    right: -43%;
     text-transform: uppercase;
-    background: #ff7300;
+    background: #09096e;
     border: 1px Solid #151516;
     color: #ffffff;
     padding: 10px 20px;
@@ -161,6 +185,7 @@ nav ul li a:hover::after {
     top: 556px;
     left: 110px;
     padding: 10px 30px;
+    color: #962800;
 }
 
 .media ul {
@@ -190,5 +215,9 @@ nav ul li a:hover::after {
     line-height: 1;
     font-size: 30px;
     letter-spacing: 1px;
-    color: #740000;  
+    color: #020249;  
+}
+
+@media screen and (max-width: 600px) {
+   
 }
